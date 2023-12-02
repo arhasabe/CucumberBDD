@@ -1,0 +1,1321 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Automation_Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Ecommerce_Automation_Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Dec 2, 2023 12:48:16 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Dec 2, 2023 12:48:16 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Dec 2, 2023 12:48:30 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>5</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>5</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='100%'><b>7</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
+<div>
+<small data-tooltip='26%'><b>14</b> steps failed,
+<b>38</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"OrangeHRM Login functionality Test Scenarios":6.306,"Swaglab login test functionality":0.473,"SwagLabs login and product buy functionality test scenario with excel data":2.735,"SwagLabs login functionality with multiple credentials test scenario":0.914,"Vtiger Login functionality Test Scenarios":0.378
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@Regression</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@Smoke</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@Sanity</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>AppName</td>
+<td>QAAutomation</td>
+</tr>
+<tr>
+<td>user</td>
+<td>Automation Developer</td>
+</tr>
+<tr>
+<td>build</td>
+<td>All Automation batches</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 5,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 7,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 14,
+warningGrandChild: 0,
+skipGrandChild: 38,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@Regression</a><a class="dropdown-item" href="#">@Smoke</a><a class="dropdown-item" href="#">@Sanity</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">OrangeHRM Login functionality Test Scenarios</p>
+            <p class="text-sm">
+              <span>12:48:19 PM</span> / <span>00:00:06:306</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">OrangeHRM Login functionality Test Scenarios</h5>
+<span class='badge badge-success'>12.02.2023 12:48:19 PM</span>
+<span class='badge badge-danger'>12.02.2023 12:48:25 PM</span>
+<span class='badge badge-default'>00:00:06:306</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>OrangeHRM login functionality test with valid credentials</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.OrangeHrmLoginTest.user_opens_the_chrome_browser_and_orange_hrm_application_is_loaded()">
+                <span>Given user opens the chrome browser and OrangeHrm application is loaded</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C:\WINDOWS\system32\config\systemprofile\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+	at utilities.SeleniumUtility.setUp(SeleniumUtility.java:34)
+	at stepDefinitions.OrangeHrmLoginTest.user_opens_the_chrome_browser_and_orange_hrm_application_is_loaded(OrangeHrmLoginTest.java:24)
+	at ?.user opens the chrome browser and OrangeHrm application is loaded(file:///C:/Users/Admin/Desktop/JavaEclipse/CucumberBDD/./src/test/resources/Features/OrangeHrmLogin.feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.OrangeHrmLoginTest.user_has_username_and_password()">
+                <span>Given user has username and password</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.OrangeHrmLoginTest.user_enters_username_and_password()">
+                <span>When user enters username and password</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.OrangeHrmLoginTest.user_click_on_the_login_button()">
+                <span>And user click on the login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.OrangeHrmLoginTest.user_should_be_logged_in_successfully_and_navigated_to_home_page()">
+                <span>Then user should be logged in successfully and navigated to home page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>stepDefinitions.VtigerCampaignTest.tearDown(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException
+	at stepDefinitions.VtigerCampaignTest.tearDown(VtigerCampaignTest.java:123)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Swaglab login test functionality</p>
+            <p class="text-sm">
+              <span>12:48:25 PM</span> / <span>00:00:00:473</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Swaglab login test functionality</h5>
+<span class='badge badge-success'>12.02.2023 12:48:25 PM</span>
+<span class='badge badge-danger'>12.02.2023 12:48:26 PM</span>
+<span class='badge badge-default'>00:00:00:473</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="10"><span class="badge log fail-bg mr-2">Fail</span>Swaglabs login with valid credentials</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.SwagLabsLoginTest.user_launches_the_chrome_browser_and_opens_the_swaglabs_application()">
+                <span>Given user launches the chrome browser and opens the Swaglabs application</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C:\WINDOWS\system32\config\systemprofile\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+	at utilities.SeleniumUtility.setUp(SeleniumUtility.java:34)
+	at stepDefinitions.SwagLabsLoginTest.user_launches_the_chrome_browser_and_opens_the_swaglabs_application(SwagLabsLoginTest.java:24)
+	at ?.user launches the chrome browser and opens the Swaglabs application(file:///C:/Users/Admin/Desktop/JavaEclipse/CucumberBDD/./src/test/resources/Features/SwagLabLogin.feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsLoginTest.user_enters_the_username_and_password_as(io.cucumber.datatable.DataTable)">
+                <span>When user enters the username and password as</span>
+      <div><table class='markup-table table '><tr><td>standard_user</td><td>secret_sauce</td></tr><tr><td>problem_user</td><td>secret_sauce</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsLoginTest.user_click_on_the_sign_in_button()">
+                <span>And user click on the sign in button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsLoginTest.verify_the_user_is_logged_in()">
+                <span>Then verify the user is logged in</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>stepDefinitions.VtigerCampaignTest.tearDown(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException
+	at stepDefinitions.VtigerCampaignTest.tearDown(VtigerCampaignTest.java:123)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="16"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">SwagLabs login and product buy functionality test scenario with excel data</p>
+            <p class="text-sm">
+              <span>12:48:26 PM</span> / <span>00:00:02:735</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">SwagLabs login and product buy functionality test scenario with excel data</h5>
+<span class='badge badge-success'>12.02.2023 12:48:26 PM</span>
+<span class='badge badge-danger'>12.02.2023 12:48:29 PM</span>
+<span class='badge badge-default'>00:00:02:735</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="17"><span class="badge log fail-bg mr-2">Fail</span>Test the product buy functionality of SwagLabs for lowest price product</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.SwagLabsProductBuy.user_opens_browser_and_swag_labs_application_using_data_provided_on_sheet(java.lang.String)">
+                <span>Given User opens browser and SwagLabs application using data provided on "UserData" sheet</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C:\WINDOWS\system32\config\systemprofile\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+	at utilities.SeleniumUtility.setUp(SeleniumUtility.java:34)
+	at stepDefinitions.SwagLabsProductBuy.user_opens_browser_and_swag_labs_application_using_data_provided_on_sheet(SwagLabsProductBuy.java:31)
+	at ?.User opens browser and SwagLabs application using data provided on "UserData" sheet(file:///C:/Users/Admin/Desktop/JavaEclipse/CucumberBDD/./src/test/resources/Features/SwagLabsBackgroundExcelData.feature:6)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsProductBuy.user_enter_username_and_password_from_sheet(java.lang.String)">
+                <span>When User enter username and password from "UserData" sheet</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsProductBuy.user_click_on_the_login_button_after_enter_the_data_from_sheet()">
+                <span>And User click on the login button after enter the data from sheet</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsProductBuy.user_sort_the_products_in_ascending_order_of_price()">
+                <span>When user sort the products in ascending order of price</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsProductBuy.user_add_the_lowest_price_product_to_the_cart()">
+                <span>And User add the lowest price product to the cart</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsProductBuy.user_navigate_to_the_cart_page()">
+                <span>And User navigate to the cart page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsProductBuy.lowest_price_product_should_be_added_in_the_cart()">
+                <span>Then Lowest price product should be added in the cart</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsProductBuy.user_click_on_checkout_button()">
+                <span>When User click on checkout button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsProductBuy.user_enters_firstname_lastname_and_zip_code_provided_on_sheet(java.lang.String)">
+                <span>And User enters firstname, lastname and zip code provided on "UserData" sheet</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsProductBuy.verify_the_total_amount_is_addition_of_item_cost_and_tax_amount()">
+                <span>Then Verify the total amount is addition of item cost and tax amount</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsProductBuy.user_click_on_the_finish_button()">
+                <span>When User click on the finish button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsProductBuy.order_confirmation_message_should_be_displayed()">
+                <span>Then Order confirmation message should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>stepDefinitions.VtigerCampaignTest.tearDown(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException
+	at stepDefinitions.VtigerCampaignTest.tearDown(VtigerCampaignTest.java:123)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="31"><span class="badge log fail-bg mr-2">Fail</span>Test the product buy functionality of SwagLabs for highest price product</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.SwagLabsProductBuy.user_opens_browser_and_swag_labs_application_using_data_provided_on_sheet(java.lang.String)">
+                <span>Given User opens browser and SwagLabs application using data provided on "UserData" sheet</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C:\WINDOWS\system32\config\systemprofile\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+	at utilities.SeleniumUtility.setUp(SeleniumUtility.java:34)
+	at stepDefinitions.SwagLabsProductBuy.user_opens_browser_and_swag_labs_application_using_data_provided_on_sheet(SwagLabsProductBuy.java:31)
+	at ?.User opens browser and SwagLabs application using data provided on "UserData" sheet(file:///C:/Users/Admin/Desktop/JavaEclipse/CucumberBDD/./src/test/resources/Features/SwagLabsBackgroundExcelData.feature:6)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsProductBuy.user_enter_username_and_password_from_sheet(java.lang.String)">
+                <span>When User enter username and password from "UserData" sheet</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsProductBuy.user_click_on_the_login_button_after_enter_the_data_from_sheet()">
+                <span>And User click on the login button after enter the data from sheet</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsProductBuy.user_sort_the_products_in_descending_order_of_price()">
+                <span>When user sort the products in descending order of price</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsProductBuy.user_add_the_highest_price_product_to_the_cart()">
+                <span>And User add the highest price product to the cart</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsProductBuy.user_navigate_to_the_cart_page()">
+                <span>And User navigate to the cart page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsProductBuy.highest_price_product_should_be_added_in_the_cart()">
+                <span>Then Highest price product should be added in the cart</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsProductBuy.user_click_on_checkout_button()">
+                <span>When User click on checkout button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsProductBuy.user_enters_firstname_lastname_and_zip_code_provided_on_sheet(java.lang.String)">
+                <span>And User enters firstname, lastname and zip code provided on "UserData" sheet</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsProductBuy.verify_the_total_amount_is_addition_of_item_cost_and_tax_amount()">
+                <span>Then Verify the total amount is addition of item cost and tax amount</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsProductBuy.user_click_on_the_finish_button()">
+                <span>When User click on the finish button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.SwagLabsProductBuy.order_confirmation_message_should_be_displayed()">
+                <span>Then Order confirmation message should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>stepDefinitions.VtigerCampaignTest.tearDown(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException
+	at stepDefinitions.VtigerCampaignTest.tearDown(VtigerCampaignTest.java:123)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="45"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">SwagLabs login functionality with multiple credentials test scenario</p>
+            <p class="text-sm">
+              <span>12:48:29 PM</span> / <span>00:00:00:914</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">SwagLabs login functionality with multiple credentials test scenario</h5>
+<span class='badge badge-success'>12.02.2023 12:48:29 PM</span>
+<span class='badge badge-danger'>12.02.2023 12:48:29 PM</span>
+<span class='badge badge-default'>00:00:00:914</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=45</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="46"><span class="badge log fail-bg mr-2">Fail</span>SwagLabs login functionality with valid multiple credentials at enviroment "<Environment>"</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="47"><span class="badge log fail-bg mr-2">Fail</span>SwagLabs login functionality with valid multiple credentials at enviroment "Dev"</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given User open the "chrome" browser and launch the swagLabs login page "https://www.saucedemo.com/"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C:\WINDOWS\system32\config\systemprofile\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+	at utilities.SeleniumUtility.setUp(SeleniumUtility.java:34)
+	at stepDefinitions.SwagLabsMultipleLogin.user_open_the_browser_and_launch_the_swag_labs_login_page(SwagLabsMultipleLogin.java:22)
+	at ?.User open the "chrome" browser and launch the swagLabs login page "https://www.saucedemo.com/"(file:///C:/Users/Admin/Desktop/JavaEclipse/CucumberBDD/./src/test/resources/Features/SwagLabsMultipleLogin.feature:7)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When User enters username "standard_user" and password "secret_sauce" on the login page</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User click on the login button after entering username and password</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify that login is successful or not with  "positive" scenario</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>stepDefinitions.VtigerCampaignTest.tearDown(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException
+	at stepDefinitions.VtigerCampaignTest.tearDown(VtigerCampaignTest.java:123)
+</textarea>
+      
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="53"><span class="badge log fail-bg mr-2">Fail</span>SwagLabs login functionality with valid multiple credentials at enviroment "Dev"</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given User open the "chrome" browser and launch the swagLabs login page "https://www.saucedemo.com/"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C:\WINDOWS\system32\config\systemprofile\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+	at utilities.SeleniumUtility.setUp(SeleniumUtility.java:34)
+	at stepDefinitions.SwagLabsMultipleLogin.user_open_the_browser_and_launch_the_swag_labs_login_page(SwagLabsMultipleLogin.java:22)
+	at ?.User open the "chrome" browser and launch the swagLabs login page "https://www.saucedemo.com/"(file:///C:/Users/Admin/Desktop/JavaEclipse/CucumberBDD/./src/test/resources/Features/SwagLabsMultipleLogin.feature:7)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When User enters username "standard_user" and password "secret_sauce1" on the login page</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User click on the login button after entering username and password</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Verify that login is successful or not with  "negative" scenario</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>stepDefinitions.VtigerCampaignTest.tearDown(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException
+	at stepDefinitions.VtigerCampaignTest.tearDown(VtigerCampaignTest.java:123)
+</textarea>
+      
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="59"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Vtiger Login functionality Test Scenarios</p>
+            <p class="text-sm">
+              <span>12:48:29 PM</span> / <span>00:00:00:378</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Vtiger Login functionality Test Scenarios</h5>
+<span class='badge badge-success'>12.02.2023 12:48:29 PM</span>
+<span class='badge badge-danger'>12.02.2023 12:48:30 PM</span>
+<span class='badge badge-default'>00:00:00:378</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=59</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="60"><span class="badge log fail-bg mr-2">Fail</span>Vtiger login functionality test with valid credentials</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.VtigerLoginTest.opens_the_chrome_browser_and_vtiger_application_is_loaded()">
+                <span>Given opens the chrome browser and Vtiger application is loaded</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C:\WINDOWS\system32\config\systemprofile\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+	at utilities.SeleniumUtility.setUp(SeleniumUtility.java:34)
+	at stepDefinitions.VtigerLoginTest.opens_the_chrome_browser_and_vtiger_application_is_loaded(VtigerLoginTest.java:22)
+	at ?.opens the chrome browser and Vtiger application is loaded(file:///C:/Users/Admin/Desktop/JavaEclipse/CucumberBDD/./src/test/resources/Features/VtigerLogin.feature:6)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.VtigerLoginTest.enters_username_and_password()">
+                <span>When enters username and password</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.VtigerLoginTest.click_on_the_sign_in_button()">
+                <span>And click on the sign in button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.VtigerLoginTest.verify_login_was_successful()">
+                <span>Then verify login was successful</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>stepDefinitions.VtigerCampaignTest.tearDown(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException
+	at stepDefinitions.VtigerCampaignTest.tearDown(VtigerCampaignTest.java:123)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">@Regression</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Regression</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:48:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='16' id='17'>Test the product buy functionality of SwagLabs for lowest price product</a>
+<div class="">
+<span class="badge badge-default">SwagLabs login and product buy functionality test scenario with excel data.Test the product buy functionality of SwagLabs for lowest price product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:48:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='16' id='31'>Test the product buy functionality of SwagLabs for highest price product</a>
+<div class="">
+<span class="badge badge-default">SwagLabs login and product buy functionality test scenario with excel data.Test the product buy functionality of SwagLabs for highest price product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:48:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='45' id='46'>SwagLabs login functionality with valid multiple credentials at enviroment "<Environment>"</a>
+<div class="">
+<span class="badge badge-default">SwagLabs login functionality with multiple credentials test scenario.SwagLabs login functionality with valid multiple credentials at enviroment "<Environment>"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:48:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='45' id='47'>SwagLabs login functionality with valid multiple credentials at enviroment "Dev"</a>
+<div class="">
+<span class="badge badge-default">SwagLabs login functionality with multiple credentials test scenario.SwagLabs login functionality with valid multiple credentials at enviroment "Dev"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:48:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='45' id='53'>SwagLabs login functionality with valid multiple credentials at enviroment "Dev"</a>
+<div class="">
+<span class="badge badge-default">SwagLabs login functionality with multiple credentials test scenario.SwagLabs login functionality with valid multiple credentials at enviroment "Dev"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@Smoke</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Smoke</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:48:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='10'>Swaglabs login with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Swaglab login test functionality.Swaglabs login with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:48:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='59' id='60'>Vtiger login functionality test with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Vtiger Login functionality Test Scenarios.Vtiger login functionality test with valid credentials</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@Sanity</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Sanity</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:48:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>OrangeHRM login functionality test with valid credentials</a>
+<div class="">
+<span class="badge badge-default">OrangeHRM Login functionality Test Scenarios.OrangeHRM login functionality test with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:48:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='16' id='17'>Test the product buy functionality of SwagLabs for lowest price product</a>
+<div class="">
+<span class="badge badge-default">SwagLabs login and product buy functionality test scenario with excel data.Test the product buy functionality of SwagLabs for lowest price product</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>7</span>
+</span>
+<p class="name">org.openqa.selenium.remote.NoSuchDriverException</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.remote.NoSuchDriverException</h4>
+<span status="fail" class='badge log badge-danger'>7 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:48:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Given user opens the chrome browser and OrangeHrm application is loaded</a>
+<div class="">
+<span class="badge badge-default">OrangeHRM Login functionality Test Scenarios.OrangeHRM login functionality test with valid credentials.Given user opens the chrome browser and OrangeHrm application is loaded</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:48:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='11'>Given user launches the chrome browser and opens the Swaglabs application</a>
+<div class="">
+<span class="badge badge-default">Swaglab login test functionality.Swaglabs login with valid credentials.Given user launches the chrome browser and opens the Swaglabs application</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:48:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='16' id='18'>Given User opens browser and SwagLabs application using data provided on "UserData" sheet</a>
+<div class="">
+<span class="badge badge-default">SwagLabs login and product buy functionality test scenario with excel data.Test the product buy functionality of SwagLabs for lowest price product.Given User opens browser and SwagLabs application using data provided on "UserData" sheet</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:48:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='16' id='32'>Given User opens browser and SwagLabs application using data provided on "UserData" sheet</a>
+<div class="">
+<span class="badge badge-default">SwagLabs login and product buy functionality test scenario with excel data.Test the product buy functionality of SwagLabs for highest price product.Given User opens browser and SwagLabs application using data provided on "UserData" sheet</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:48:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='45' id='48'>Given User open the "chrome" browser and launch the swagLabs login page "https://www.saucedemo.com/"</a>
+<div class="">
+<span class="badge badge-default">SwagLabs login functionality with multiple credentials test scenario.SwagLabs login functionality with valid multiple credentials at enviroment "Dev".Given User open the "chrome" browser and launch the swagLabs login page "https://www.saucedemo.com/"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:48:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='45' id='54'>Given User open the "chrome" browser and launch the swagLabs login page "https://www.saucedemo.com/"</a>
+<div class="">
+<span class="badge badge-default">SwagLabs login functionality with multiple credentials test scenario.SwagLabs login functionality with valid multiple credentials at enviroment "Dev".Given User open the "chrome" browser and launch the swagLabs login page "https://www.saucedemo.com/"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:48:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='59' id='61'>Given opens the chrome browser and Vtiger application is loaded</a>
+<div class="">
+<span class="badge badge-default">Vtiger Login functionality Test Scenarios.Vtiger login functionality test with valid credentials.Given opens the chrome browser and Vtiger application is loaded</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>7</span>
+</span>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>7 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:48:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>stepDefinitions.VtigerCampaignTest.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">OrangeHRM Login functionality Test Scenarios.OrangeHRM login functionality test with valid credentials.stepDefinitions.VtigerCampaignTest.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:48:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='15'>stepDefinitions.VtigerCampaignTest.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Swaglab login test functionality.Swaglabs login with valid credentials.stepDefinitions.VtigerCampaignTest.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:48:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='16' id='30'>stepDefinitions.VtigerCampaignTest.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">SwagLabs login and product buy functionality test scenario with excel data.Test the product buy functionality of SwagLabs for lowest price product.stepDefinitions.VtigerCampaignTest.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:48:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='16' id='44'>stepDefinitions.VtigerCampaignTest.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">SwagLabs login and product buy functionality test scenario with excel data.Test the product buy functionality of SwagLabs for highest price product.stepDefinitions.VtigerCampaignTest.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:48:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='45' id='52'>stepDefinitions.VtigerCampaignTest.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">SwagLabs login functionality with multiple credentials test scenario.SwagLabs login functionality with valid multiple credentials at enviroment "Dev".stepDefinitions.VtigerCampaignTest.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:48:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='45' id='58'>stepDefinitions.VtigerCampaignTest.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">SwagLabs login functionality with multiple credentials test scenario.SwagLabs login functionality with valid multiple credentials at enviroment "Dev".stepDefinitions.VtigerCampaignTest.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:48:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='59' id='65'>stepDefinitions.VtigerCampaignTest.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Vtiger Login functionality Test Scenarios.Vtiger login functionality test with valid credentials.stepDefinitions.VtigerCampaignTest.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
